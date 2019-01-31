@@ -1,0 +1,413 @@
+{
+	"React Component": {
+		"prefix": "tsrcc",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"export class ${1} extends React.Component<I${1}Props> {",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${2}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create a React Component with typescript."
+	},
+	"React Component - Full": {
+		"prefix": "tsrcfull",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"interface I${1:App}State {",
+			"}",
+			"",
+			"export class ${1:App} extends React.Component<I${1:App}Props, I${1:App}State> {",
+			"  public readonly state: I${1}State;",
+			"",
+			"  constructor(props: I${1}Props) {",
+			"    super(props);",
+			"",
+			"    this.state = {",
+			"    }",
+			"  }",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${2}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create a stateful React Component with typescript with Props, State, and a constructor."
+	},
+	"React PureComponent": {
+		"prefix": "tsrpcc",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"export class ${1:App} extends React.PureComponent<I${1:App}Props> {",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${2}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create a React PureComponent."
+	},
+	"React Pure Function Component": {
+		"prefix": "tsrpfc",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"export function ${1:App} (props: I${1:App}Props) {",
+			"    return (",
+			"      <div>",
+			"        ${2}",
+			"      </div>",
+			"    );",
+			"}",
+			""
+		],
+		"description": "Create a React Pure Function Component."
+	},
+	"React Stateless Functional Component": {
+		"prefix": "tsrsfc",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"export const ${1:App}: React.SFC<I${1:App}Props> = (props) => {",
+			"    return (",
+			"      <div>",
+			"        ${2}",
+			"      </div>",
+			"    );",
+			"};",
+			""
+		],
+		"description": "Create a React Stateless Functional Component."
+	},
+	"constructor": {
+		"prefix": "conc",
+		"body": [
+			"constructor(props: ${1}) {",
+			"  super(props);",
+			"  ${2}",
+			"}"
+		],
+		"description": "Add a constructor in class."
+	},
+	"componentWillMount": {
+		"prefix": "cwm",
+		"body": [
+			"public componentWillMount() {",
+			"  ${1}",
+			"}"
+		],
+		"description": "Invoked immediately before mounting occurs. It is called before render()."
+	},
+	"render": {
+		"prefix": "ren",
+		"body": [
+			"public render() {",
+			"  return (",
+			"    ${1}",
+			"  );",
+			"}"
+		],
+		"description": "When called, it should examine this.props and this.state and return a single React element."
+	},
+	"componentDidMount": {
+		"prefix": "cdm",
+		"body": [
+			"public componentDidMount() {",
+			"  ${1}",
+			"}"
+		],
+		"description": "Invoked immediately after a component is mounted."
+	},
+	"componentWillReceiveProps": {
+		"prefix": "cwrp",
+		"body": [
+			"public componentWillReceiveProps(nextProps: ${1}) {",
+			"  ${2}",
+			"}"
+		],
+		"description": "Invoked before a mounted component receives new props."
+	},
+	"shouldComponentUpdate": {
+		"prefix": "scu",
+		"body": [
+			"public shouldComponentUpdate(nextProps: ${1}, nextState: ${2}) {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Invoked before rendering when new props or state are being received."
+	},
+	"componentWillUpdate": {
+		"prefix": "cwu",
+		"body": [
+			"public componentWillUpdate(nextProps: ${1}, nextState: ${2}) {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Invoked immediately before rendering when new props or state are being received."
+	},
+	"componentDidUpdate": {
+		"prefix": "cdu",
+		"body": [
+			"public componentDidUpdate(prevProps: ${1}, prevState: ${2}) {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Invoked immediately after updating occurs. This method is not called for the initial render"
+	},
+	"componentWillUnmount": {
+		"prefix": "cwum",
+		"body": [
+			"public componentWillUnmount() {",
+			"  ${1}",
+			"}"
+		],
+		"description": "Invoked immediately before a component is unmounted and destroyed"
+	},
+	"componentSetState": {
+		"prefix": "sst",
+		"body": [
+			"this.setState(${1});"
+		],
+		"description": "Performs a shallow merge of nextState into current state"
+	},
+	"bind method": {
+		"prefix": "bnd",
+		"body": [
+			"this.${1} = this.${1}.bind(this);"
+		],
+		"description": "bind this in method"
+	},
+	"method": {
+		"prefix": "met",
+		"body": [
+			"public ${1:methodName} = (${2:x}: ${3:any}) => {",
+			"  ${4}",
+			"}"
+		],
+		"description": "Create a method"
+	},
+	"import": {
+		"prefix": "imt",
+		"body": [
+			"import { $2 } from '$1';"
+		],
+		"description": "Create a import"
+	},
+	"import all": {
+		"prefix": "imta",
+		"body": [
+			"import * as $1 from '$2';"
+		],
+		"description": "Import everything from module"
+	},
+	"import default": {
+		"prefix": "imtd",
+		"body": [
+			"import $1 from '$2';"
+		],
+		"description": "Create a default import"
+	},
+	"getDerivedStateFromProps": {
+		"prefix": "gdsfp",
+		"body": [
+			"static getDerivedStateFromProps(nextProps: ${1}, prevState: ${2}) {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Invoked right before calling the render method, both on the initial mount and on subsequent updates"
+	},
+	"getSnapshotBeforeUpdate": {
+		"prefix": "gsbu",
+		"body": [
+			"getSnapshotBeforeUpdate(prevProps: ${1}, prevState: ${2}) {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Invoked right before the most recently rendered output is committed to e.g. the DOM"
+	},
+	"React + MobX Component": {
+		"prefix": "tsrcm",
+		"body": [
+			"import { inject, observer } from 'mobx-react';",
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"interface InjectedProps extends I${1:App}Props {",
+			"  ${2:storeName}: ${3:IMyStore};",
+			"}",
+			"",
+			"@inject('${2:storeName}')",
+			"@observer",
+			"export class ${1:App} extends React.Component<I${1:App}Props> {",
+			"  public get injectedProps() {",
+			"    return this.props as InjectedProps",
+			"  }",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${4}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create React + MobX Component"
+	},
+	"React + Mobx Component - Full": {
+		"prefix": "tsrcmfull",
+		"body": [
+			"import { inject, observer } from 'mobx-react';",
+			"import * as React from 'react';",
+			"",
+			"interface I${1:App}Props {",
+			"}",
+			"",
+			"interface InjectedProps extends I${1:App}Props {",
+			"  ${2:storeName}: ${3:IMyStore};",
+			"}",
+			"",
+			"interface I${1}State {",
+			"}",
+			"",
+			"@inject('${2:storeName}')",
+			"@observer",
+			"export class ${1:App} extends React.Component<I${1:App}Props, I${1:App}State> {",
+			"  public readonly state: I${1:App}State;",
+			"",
+			"  public get injectedProps() {",
+			"    return this.props as InjectedProps",
+			"  }",
+			"",
+			"  constructor(props: I${1:App}Props) {",
+			"    super(props);",
+			"",
+			"    this.state = {",
+			"    }",
+			"  }",
+			"",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${4}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create a stateful React + MobX Component"
+	},
+	"React + MobX + React-Router": {
+		"prefix": "tsrcmrr",
+		"body": [
+			"import { inject, observer } from 'mobx-react';",
+			"import * as React from 'react';",
+			"import { RouteComponentProps, withRouter } from 'react-router-dom';",
+			"",
+			"interface I${1:App}Props extends RouteComponentProps<object> {",
+			"}",
+			"",
+			"interface InjectedProps extends I${1}Props {",
+			"  ${2:storeName}: ${3:IMyStore};",
+			"}",
+			"",
+			"@inject('${2:storeName}')",
+			"@observer",
+			"export class ${1:App}Base extends React.Component<I${1:App}Props> {",
+			"  public get injectedProps() {",
+			"    return this.props as InjectedProps",
+			"  }",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${4}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			"",
+			"export const ${1:App} = withRouter(${1:App}Base);",
+			""
+		],
+		"description": "Create a React + MobX + React-Router Component"
+	},
+	"React + MobX + React-Router - Full": {
+		"prefix": "tsrcmrrfull",
+		"body": [
+			"import { inject, observer } from 'mobx-react';",
+			"import * as React from 'react';",
+			"import { RouteComponentProps, withRouter } from 'react-router-dom';",
+			"",
+			"interface I${1:App}Props extends RouteComponentProps<object> {",
+			"}",
+			"",
+			"interface InjectedProps extends I${1:App}Props {",
+			"  ${2:storeName}: ${3:IMyStore};",
+			"}",
+			"",
+			"interface I${1:App}State {",
+			"}",
+			"",
+			"@inject('${2:storeName}')",
+			"@observer",
+			"export class ${1:App}Base extends React.Component<I${1:App}Props, I${1:App}State> {",
+			"  public readonly state: I${1:App}State;",
+			"",
+			"  public get injectedProps() {",
+			"    return this.props as InjectedProps",
+			"  }",
+			"",
+			"  public render() {",
+			"    return (",
+			"      <div>",
+			"        ${4}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			"",
+			"export const ${1:App} = withRouter(${1:App}Base);",
+			""
+		],
+		"description": "Create a stateful React + MobX + React-Router Component"
+	}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "vscode-react-ts-snippets",
+  "version": "1.0.3",
+  "description": "Code snippets for react in typescript",
+  "displayName": "React + Typescript Code Snippets",
+  "publisher": "weffe",
+  "icon": "images/react.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weffe/vscode-react-ts-snippets.git"
+  },
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "react",
+    "vscode",
+    "typescript",
+    "vscode-extension",
+    "snippets"
+  ],
+  "author": "weffe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Weffe/vscode-react-ts-snippets/issues"
+  },
+  "homepage": "https://github.com/Weffe/vscode-react-ts-snippets#readme",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.54.0"
+  },
+  "scripts": {
+    "vsce": "vsce",
+    "vsce:pack": "vsce package",
+    "vsce:publish": "vsce publish"
+  }
+}
