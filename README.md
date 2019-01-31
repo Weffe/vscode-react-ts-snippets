@@ -4,9 +4,11 @@
 
 -------------------
 
-![version badge](https://img.shields.io/badge/version-1.1.0-green.svg?logo=visual-studio-code&style=for-the-badge)
+![version badge](https://img.shields.io/badge/version-1.1.0-blue.svg?logo=visual-studio-code&style=for-the-badge)
 
 This extension contains opinionated code snippets for React with Typescript.
+
+VS Marketplace link: https://marketplace.visualstudio.com/items?itemName=weffe.vscode-react-ts-snippets
 
 ## Installation
 
