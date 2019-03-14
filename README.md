@@ -4,7 +4,7 @@
 
 -------------------
 
-![version badge](https://img.shields.io/badge/version-1.1.0-blue.svg?logo=visual-studio-code&style=for-the-badge)
+[![version badge](https://img.shields.io/badge/version-1.1.0-blue.svg?logo=visual-studio-code&style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=weffe.vscode-react-ts-snippets)
 
 This extension contains opinionated code snippets for React with Typescript.
 
@@ -50,7 +50,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `tsrpcc →`   | `class purecomponent skeleton` |
 | `tsrpcjc →`  | `class purecomponent without import and default export lines` |
 | `tsrpfc →`    | `pure function component skeleton` |
-| `tsrsfc →`    | `stateless functional component` |
+| `tsrfc →`    | `functional component skeleton` |
 | `conc →`     | `class default constructor with props and context` |
 | `cwm →`      | `componentWillMount method` |
 | `ren →`      | `render method` |
