@@ -49,7 +49,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `tsrcjc →`   | `class component skeleton without import and default export lines` |
 | `tsrpcc →`   | `class purecomponent skeleton` |
 | `tsrpcjc →`  | `class purecomponent without import and default export lines` |
-| `tsrpfc →`    | `pure function component skeleton` |
+| `tsrpfc →`   | `pure function component skeleton` |
+| `tsrpfcwh →` | `pure function component skeleton with hooks` |
 | `tsrfc →`    | `functional component skeleton` |
 | `conc →`     | `class default constructor with props and context` |
 | `cwm →`      | `componentWillMount method` |
@@ -61,7 +62,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `cdu →`      | `componentDidUpdate method` |
 | `cwum →`     | `componentWillUnmount method` |
 | `gdsfp →`    | `getDerivedStateFromProps method` |
-| `gsbu →`      | `getSnapshotBeforeUpdate method` |
+| `gsbu →`     | `getSnapshotBeforeUpdate method` |
 | `sst →`      | `this.setState with object as parameter` |
 | `bnd →`      | `binds the this of method inside the constructor` |
 | `met →`      | `simple method` |
@@ -69,8 +70,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `imta →`     | `import everything from a dependency` |
 | `imtd →`     | `import default object from a dependency` |
 | `tsrcm →`    | `Create a React + MobX Component` |
-| `tsrcmfull →`    | `Create a stateful React + MobX Component` |
-| `tsrcmrr →`    | `Create a React + MobX + React-Router Component` |
+| `tsrcmfull →`| `Create a stateful React + MobX Component` |
+| `tsrcmrr →`  | `Create a React + MobX + React-Router Component` |
 | `tsrcmrrfull →`    | `Create a stateful React + MobX + React-Router Component` |
 
 ## License
