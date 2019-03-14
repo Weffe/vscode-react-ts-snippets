@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.1.0](https://github.com/Weffe/vscode-react-ts-snippets/compare/v2.0.0...v2.1.0) (2019-03-14)
+
+
+### Features
+
+* add creating a function component with hooks ([19c6209](https://github.com/Weffe/vscode-react-ts-snippets/commit/19c6209))
+
+
+
 # 2.0.0 (2019-03-14)
 
 
