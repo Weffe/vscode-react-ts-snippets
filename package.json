@@ -52,5 +52,12 @@
     "vsce:pack": "vsce package",
     "vsce:publish": "vsce publish",
     "release": "standard-version"
-  }
+  },
+  "files": [
+    "snippets/**/*",
+    "images/**/*",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md"
+  ]
 }
